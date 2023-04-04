@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Delicious+Handrawn&family=Fruktur&family=Tangerine&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 65%;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(245deg, rgb(255, 38, 0), rgb(76, 0, 255));
+}
+h2{
+    font-size: 2rem;
+    font-family: 'Berkshire Swash', cursive;
+    color: #4b0606;
+}
+p{
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: 'Tangerine', cursive;
+    font-weight: 600;
+    color: #000000;
+}
+.box{
+    width: 300px;
+    /* height: 200px; */
+    margin: 250px auto;
+    padding: 10px;
+    background: linear-gradient(rgba(255, 255, 255, 0.322), rgba(255, 255, 255, 0.295));
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+nav{
+    padding: 8px;
+    width: 100%;
+    background: #040469d3;
+    text-align: center;
+    box-shadow: 0px 0px 4px 3px #000000;
+}
+nav h2{
+    text-align: center;
+    font-size: 3rem;
+    color: #ffffff;
+}
+.btn{
+    margin: 8px 10px 8px 30px;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-family: cursive;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgba(116, 25, 2, 0.836);
+    color: rgb(235, 235, 238);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+background-color: green;
+color: rgb(204, 204, 204);
+}
+input{
+    margin: 8px 10px 4px 30px ;
+    display: block;
+    padding: 8px;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid blue;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #050c49;
+    color: rgb(78, 71, 71);
+    text-align: center;
+}
+footer p{
+    font-size: 1.4rem;
+    color: grey;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+@media (max-width: 580px) {
+    nav h2{
+        font-size: 1.8rem;
+    }
+    .box h2{
+        font-size: 1.6rem;
+    }
+    .btn{
+        font-size: 1.4rem;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+    #game{
+        width: 250px;
+        padding: 10px;
+    }
+    input{
+        margin: 8px 10px 4px 7px ;
+        font-size: 1.6rem;
+    }
+   .result{
+    font-size: 1rem;
+   }
+}
+
+#game{
+    display: none;
+}
+#game button{
+    margin-left: 59px;
+    padding: 4px 40px;
+}
+.result{
+    margin: 10px;
+    color: rgb(223, 223, 4);
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: scale(1.1);
+    text-shadow: 0px 4px 4px rgb(255, 0, 0);
+}
